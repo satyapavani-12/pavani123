@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>JmsDemo</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Message</display-name>
+    <servlet-name>Message</servlet-name>
+    <servlet-class>com.JmsDemo.controller.Message</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Message</servlet-name>
+    <url-pattern>/Message</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RecieveServlet</display-name>
+    <servlet-name>RecieveServlet</servlet-name>
+    <servlet-class>com.JmsDemo.controller.RecieveServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RecieveServlet</servlet-name>
+    <url-pattern>/RecieveServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
